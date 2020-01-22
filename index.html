@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js" ></script>
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Count Up By</title>
+</head>
+
+<body>
+  <h1 class="text-center">Count Up By</h1>
+  <div class="row">
+    <div class="col-6 offset-3">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Count to this number</label>
+          <input type="text" class="form-control" id="count-to" aria-describedby="emailHelp" value="100">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Count by this amount</label>
+          <input type="text" class="form-control" id="count-by" placeholder="ender the amount to count by" value="5">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+      <div id="read-out" class="col-6 offset-3">
+
+      </div>
+
+  </div>
+
+</body>
+
 </html>
