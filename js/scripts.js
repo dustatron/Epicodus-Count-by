@@ -1,15 +1,4 @@
 $(document).ready(function(){
-    //var for count-to
-    //var for count-by
-    //var count-X = 0
-
-    //for loop = while count-x is less then count-to
-    // count-x + count-by 
-    // push count-x to array
-
-    //print array to page.
-    
-    
     
     $("#submitButton").click(function(event) {
         event.preventDefault();
@@ -23,16 +12,17 @@ $(document).ready(function(){
         var countToFinal = parseInt($("#countToFinal").val());
         var countByInput = parseInt($("#countByInput").val());
 
-        for (var physicalCount = 0; physicalCount < countToFinal; physicalCount += countByInput) {
+        for (var physicalCount = 0; physicalCount <= countToFinal; physicalCount += countByInput) {
             listOfNumbers.push(physicalCount);
         }
         return listOfNumbers;
     }
 
     function readOut(arrayNumbers) {
+        $("#readOut").empty();
         arrayNumbers.forEach(function(number) {
             console.log('readOut - Run')
-        $("#readOut").append(number);
+        $("#readOut").append("<ul>" + number + "</ul>");
         });
     }
 
@@ -40,7 +30,7 @@ $(document).ready(function(){
 
 
 
-
+// -------- Specs ------------
 //Create a program that takes two numbers - one to count to and another to determine what multiple to use to get there.
 
 // Here is some sample input:
